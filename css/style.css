@@ -5,13 +5,20 @@
   --secandary-font-family: "Poppins", sans-serif;
   --primary-title: #38475a;
 }
-
 * {
   text-align: center;
   margin: 0;
   padding: 0;
   scrollbar-width: thin;
   scrollbar-color: var(--primary-title) #d8d8d8;
+  transition: all 0.3s ease-in-out;
+}
+
+ul{
+  list-style: none !important;
+}
+a {
+  text-decoration: none;
 }
 
 header .header {
@@ -116,19 +123,14 @@ p {
 .sec-sem-theLast-dark-bg,
 .cofunds-fit-barber,
 .the3-4pho,
+.chefs-CEOs,
+.CEOs-Co-Founder,
 .just-cards-information {
   padding: 100px 0px;
   text-align: center;
 }
 
-.sec-three .contener,
-.Our-Expert-Team,
-.Donations .take-margin,
-.just-cards-information,
-.sem-theLast-dark-bg,
-.Expert-Teamm {
-  margin: 0 6.5rem;
-}
+
 
 .sec-three ul {
   width: 4rem;
@@ -266,7 +268,7 @@ img:hover {
 }
 
 .Our-Expert-Team .card-body div {
-  bottom: 10px;
+  bottom: 5%;
   padding: 10px 0;
   width: 90%;
 }
@@ -280,12 +282,15 @@ img:hover {
   transition: transform 0.3s ease-in-out;
 }
 
-.Our-Expert-Team .card:hover img {
+.Our-Expert-Team .card:hover img,
+.photo-bg-12photos .row-1 .mar:hover img,
+.cofunds-fit-barber .single-team:hover img,
+.the-3 .single-team:hover img {
   transform: scale(1.1);
 }
 
 .Our-Expert-Team .card:hover .moving-div {
-  transform: translateY(-40px);
+  transform: translateY(-50%);
 }
 
 .Donations {
@@ -366,7 +371,7 @@ header .list-group {
 .to-magic-div::after {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -5%;
   width: 57%;
   height: 100%;
   background-color: var(--primary-title);
@@ -391,7 +396,7 @@ header .list-group {
 }
 
 .Expert-Teamm .team-member:hover .hover-white {
-  color: white;
+  color: white ;
 }
 
 .hover-white {
@@ -420,11 +425,11 @@ header .list-group {
 
 .Expert-Teamm .team-member:hover .overlay {
   background-color: var(--main-color) !important;
-  transform: translateY(-40px);
+  transform: translateY(-30%);
 }
 
 .Expert-Teamm .team-member:hover .social-icons a>* {
-  transform: translateY(-10px);
+  transform: translateY(-120%);
   opacity: 1 !important;
   color: white !important;
 }
@@ -473,10 +478,7 @@ header .list-group {
   margin: 1.5rem 0 0 -5px;
 }
 
-.just-cards-information .contener:nth-child(1) {
-  margin: 0;
-  padding: 0;
-}
+
 
 .just-cards-information ul,
 p {
@@ -517,6 +519,7 @@ p {
 }
 
 .sec-sem-theLast-dark-bg,
+.chefs-CEOs,
 .cofunds-fit-barber {
   background-color: #202430;
 }
@@ -534,7 +537,7 @@ p {
   transition: color 0.3s ease-in-out;
 }
 
-.sem-theLast-dark-bg .team-title p {
+.sem-theLast-dark-bg .team-title p  {
   font-size: 14px;
   font-weight: 500;
   font-family: var(--secandary-font-family);
@@ -554,7 +557,6 @@ p {
 
 .sec-sem-theLast-dark-bg .main-card {
   padding: 41px 35px 14px 42px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
 }
 
@@ -570,15 +572,23 @@ p {
 }
 
 .sec-sem-theLast-dark-bg .main-card:hover span,
-.sec-sem-theLast-dark-bg .main-card:hover i {
+.sec-sem-theLast-dark-bg .main-card:hover i,
+.sec-sem-theLast-dark-bg .main-card:hover p {
   color: white;
 }
+
+.sec-sem-theLast-dark-bg .main-card span,
+.sec-sem-theLast-dark-bg .main-card i,
+.sec-sem-theLast-dark-bg .main-card p{
+  transition: all 0.3s ease-in-out !important;
+}
+
 
 .sec-sem-theLast-dark-bg .main-card a:hover i {
   transform: rotateZ(360deg);
 }
 
-.sec-sem-theLast-dark-bg .section-tittle-one.title {
+.sec-sem-theLast-dark-bg .section-tittle-one .title {
   font-family: var(--gabriela-font-family);
   font-size: 34px;
   display: block;
@@ -677,9 +687,6 @@ p {
   transform: scale(1);
 }
 
-.photo-bg-12photos .row-1 .mar:hover img {
-  transform: scale(1.1);
-}
 
 .photo-bg-12photos .row-1 i {
   color: var(--main-color);
@@ -862,10 +869,6 @@ p {
   transition: .4s all ease-in-out;
 }
 
-.cofunds-fit-barber .single-team:hover img {
-  transform: scale(1.1);
-}
-
 .cofunds-fit-barber .sec-cofunders li{
   transition: all 0.3s ease-in-out;
 }
@@ -995,8 +998,8 @@ p {
   font-family: var(--secandary-font-family);
 }
 
-.the3-4pho img {
-  transition: all 0.5s ease-in-out;
+.the-3 img {
+  transition: all 1s ease-in-out;
 }
 
 
@@ -1036,9 +1039,6 @@ p {
 
 }
 
-.the-3 .single-team:hover img {
-  transform: scale(1) !important;
-}
 
 .sec-the-4 li a:hover{
   color: var(--main-color) !important;
@@ -1065,17 +1065,16 @@ p {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: linear-gradient(to bottom, rgba(1,84,247,0) 0%, #302072 100%);
   transition: all 0.5s ease-in-out;
   z-index: 1;
 }
 
 .sec-the-4 .single-team:hover .magic-div::before {
-  background: linear-gradient(to bottom, rgba(1,84,247,0) 0%, #302072 100%);
   top: 0;
 }
 .sec-the-4 .single-team li {
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.4s ease-in-out , opacity 0.3s ease-in-out;
   bottom: 20px;
 }
 
@@ -1084,18 +1083,180 @@ p {
   opacity: 1 !important;
 }
 
+.chefs-CEOs h3 a {
+  font-family: var(--secandary-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.chefs-CEOs span{
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: var(--secandary-font-family);
+  font-weight: 300;
+  
+}
+
+.chefs-CEOs i{
+  background-color: #383a3e;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.chefs i:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.chefs img:hover {
+  transform: scale(1) !important;
+}
+
+.chefs .single-team:hover .title {
+  color: var(--main-color)!important;
+}
+
+.chefs .single-team:hover img,
+.CEOs-Co-Founder .single-team:hover img {
+  transform: scale(1.05) !important;
+}
+
+.chefs .word span {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: var(--gabriela-font-family);
+}
+
+.CEOs-Co-Founder .team-img-0::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.CEOs-Co-Founder .single-team:hover .team-img-0::after {
+  background-color: rgba(0, 0, 0, 0.2);
+
+} 
 
 
+.CEO-Warivo-Athletes a {
+  color: var(--primary-title) ;
+}
+.CEOs-Co-Founder a:hover {
+  color: var(--primary-title) !important;
+}
 
+.CEO-Warivo-Athletes h3 a {
+  font-family: var(--secandary-font-family);
+  font-weight: 600;
+  font-size: 20px;
+}
 
+.CEOs-Co-Founder ul {
+  top: -80%;  
+} 
+.CEOs-Co-Founder .single-team:hover li ,
+.sec-Athletes .single-team:hover li {
+  opacity: 1 !important;
+} 
+.CEOs-Co-Founder .single-team a:hover i {
+  background-color: var(--primary-title) !important;
+} 
 
+.CEOs-Co-Founder .single-team:hover li {
+  transform: translateY(20%) !important;
+}
+.CEOs-Co-Founder li:nth-child(2) {
+  transition-delay: 0.1s !important;
+}
+.CEOs-Co-Founder li:nth-child(3) {
+  transition-delay: 0.2s !important;
+}
+.CEOs-Co-Founder li:nth-child(4) {
+  transition-delay: 0.3s !important;
+}
 
+.sec-Warivo .team-caption{
+  bottom: -10%;
+  height: 85px;
+}
 
+.sec-Warivo .team-img:hover .cap {
+  transform: translateY(-50%);
+}
 
+.sec-Warivo img:hover {
+  transform: scale(1) !important;
+}
+.sec-Athletes .single-team ul{
+  left: -10%;
+}
+.sec-Athletes ul {
+  left: -10%;
+}
 
+.sec-Athletes .single-team:hover li{
+  transform: translateX(50%) !important;
+}
+.sec-Athletes li:hover i{
+  color: white !important;
+  background-color: var(--main-color) !important;
+}
 
+.cofunds-fit-barber img , 
+.photo-bg-12photos img ,
+.Expert-Teamm img ,
+.Our-Expert-Team img ,
+.sec-three img ,
+.chefs-CEOs img ,
+.CEO-Warivo-Athletes img ,
+.the3-4pho img {
+  width: 105%;
+}
 
+.take-mar{
+  margin-bottom: 4rem ;
+}
+.CEOs img:hover {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+.CEOs .title {
+  color: var(--primary-title);
+  font-weight: 700;
+  font-size: 20px;
+  font-family: var(--secandary-font-family);
+}
+.CEOs .single-cat div {
+  background-color: #F4F4F4;
+  z-index: 0;
+  top: 50%;
+}
+.CEOs i:hover  {
+  background-color: var(--main-color) !important;
+  color: white !important;
 
+}
+.CEOs ul{
+  z-index: 0;
+  display: flex;
+
+}
+.CEOs .single-cat:hover .cat-cap-child {
+  transform: translateY(20%) !important;
+}
 
 
 
@@ -1133,12 +1294,18 @@ footer p {
 }
 
 .to-topcircle {
-  transition: stroke-dashoffset 0.1s linear;
+  transition: stroke-dashoffset 0.01s linear;
 
 }
 
-
-
+#dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  pointer-events: none;
+}
 
 
 
@@ -1175,6 +1342,11 @@ footer p {
     transform: rotateX(360deg);
   }
 }
+
+
+
+
+
 
 
 
